@@ -61,6 +61,8 @@ Versions are published with Git tags, for example `v0.1.1`.
 HACS can detect new tagged versions and offer updates from its normal update
 flow.
 
+See [CHANGELOG.md](CHANGELOG.md) for version notes.
+
 ## Security
 
 This repository does not require storing MELCloud credentials in files.
