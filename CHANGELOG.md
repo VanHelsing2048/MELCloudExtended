@@ -2,6 +2,14 @@
 
 All notable changes to MELCloud Extended are documented in this file.
 
+## 0.1.4 - 2026-06-12
+
+### Documentation
+
+- Added origin and attribution notes for the official Home Assistant Core
+  MELCloud integration.
+- Added Apache License 2.0 license file copied from Home Assistant Core.
+
 ## 0.1.3 - 2026-06-12
 
 ### Changed

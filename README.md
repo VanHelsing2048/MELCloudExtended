@@ -7,6 +7,22 @@ It keeps the same integration domain, `melcloud`, and adds extra Air-to-Water
 controls that are available in MELCloud but are not exposed by the official Home
 Assistant integration.
 
+## Origin and attribution
+
+This repository is a derivative custom integration based on the official
+Home Assistant Core MELCloud integration.
+
+Original source:
+
+`https://github.com/home-assistant/core/tree/dev/homeassistant/components/melcloud`
+
+The original Home Assistant integration lists `@erwindouna` as code owner. This
+repository is maintained separately by `@VanHelsing2048` and adds extra
+Air-to-Water entities on top of that original implementation.
+
+Home Assistant Core is licensed under the Apache License 2.0. A copy of that
+license is included in [LICENSE.md](LICENSE.md).
+
 ## Added entities
 
 For Air-to-Water devices, this custom integration adds:
