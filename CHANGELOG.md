@@ -2,6 +2,13 @@
 
 All notable changes to MELCloud Extended are documented in this file.
 
+## 0.1.3 - 2026-06-12
+
+### Changed
+
+- Updated integration code owner to `@VanHelsing2048`.
+- Updated integration documentation URL to this repository.
+
 ## 0.1.2 - 2026-06-12
 
 ### Documentation
