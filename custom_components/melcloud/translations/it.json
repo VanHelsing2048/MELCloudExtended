@@ -1,0 +1,160 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Integrazione MELCloud gia configurata per questa email. Il token di accesso e stato aggiornato.",
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "invalid_auth": "[%key:common::config_flow::error::invalid_auth%]",
+      "reauth_successful": "[%key:common::config_flow::abort::reauth_successful%]",
+      "reconfigure_successful": "[%key:common::config_flow::abort::reconfigure_successful%]"
+    },
+    "error": {
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "invalid_auth": "[%key:common::config_flow::error::invalid_auth%]",
+      "unknown": "[%key:common::config_flow::error::unknown%]"
+    },
+    "step": {
+      "reauth_confirm": {
+        "data": {
+          "password": "[%key:common::config_flow::data::password%]",
+          "username": "[%key:common::config_flow::data::email%]"
+        },
+        "description": "L'integrazione MELCloud deve autenticarsi nuovamente.",
+        "title": "[%key:common::config_flow::title::reauth%]"
+      },
+      "reconfigure": {
+        "data": {
+          "password": "[%key:common::config_flow::data::password%]"
+        },
+        "data_description": {
+          "password": "Inserisci la nuova password MELCloud."
+        },
+        "description": "Riconfigura l'integrazione per ottenere un nuovo token per l'account `{username}`.",
+        "title": "Riconfigura MELCloud"
+      },
+      "user": {
+        "data": {
+          "password": "[%key:common::config_flow::data::password%]",
+          "username": "[%key:common::config_flow::data::email%]"
+        },
+        "description": "Connettiti usando il tuo account MELCloud.",
+        "title": "Connetti MELCloud"
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "boiler_status": {
+        "name": "Caldaia attiva"
+      },
+      "booster_heater_status": {
+        "name": "Resistenza booster {number}"
+      },
+      "immersion_heater_status": {
+        "name": "Resistenza immersione"
+      },
+      "valve_2way_status": {
+        "name": "Valvola 2 vie"
+      },
+      "valve_3way_status": {
+        "name": "Valvola 3 vie"
+      },
+      "water_pump_status": {
+        "name": "Pompa acqua {number}"
+      }
+    },
+    "number": {
+      "cool_flow_temperature": {
+        "name": "Setpoint mandata raffrescamento"
+      },
+      "heat_flow_temperature": {
+        "name": "Setpoint mandata riscaldamento"
+      }
+    },
+    "select": {
+      "zone_operation_mode": {
+        "name": "Modalita controllo zona"
+      }
+    },
+    "sensor": {
+      "condensing_temperature": {
+        "name": "Temperatura condensazione"
+      },
+      "daily_cooling_energy_consumed": {
+        "name": "Consumo giornaliero raffrescamento"
+      },
+      "daily_cooling_energy_produced": {
+        "name": "Produzione giornaliera raffrescamento"
+      },
+      "daily_heating_energy_consumed": {
+        "name": "Consumo giornaliero riscaldamento"
+      },
+      "daily_heating_energy_produced": {
+        "name": "Produzione giornaliera riscaldamento"
+      },
+      "daily_hot_water_energy_consumed": {
+        "name": "Consumo giornaliero ACS"
+      },
+      "daily_hot_water_energy_produced": {
+        "name": "Produzione giornaliera ACS"
+      },
+      "demand_percentage": {
+        "name": "Percentuale richiesta"
+      },
+      "energy_consumed": {
+        "name": "Energia consumata"
+      },
+      "energy_produced": {
+        "name": "Energia prodotta"
+      },
+      "fan_frequency": {
+        "name": "Frequenza pompa di calore"
+      },
+      "flow_temperature": {
+        "name": "Temperatura mandata acqua"
+      },
+      "flow_temperature_boiler": {
+        "name": "Temperatura mandata caldaia"
+      },
+      "mixing_tank_temperature": {
+        "name": "Temperatura serbatoio miscelazione"
+      },
+      "outside_temperature": {
+        "name": "Temperatura esterna"
+      },
+      "return_temperature": {
+        "name": "Temperatura ritorno acqua"
+      },
+      "return_temperature_boiler": {
+        "name": "Temperatura ritorno caldaia"
+      },
+      "room_temperature": {
+        "name": "Temperatura ambiente zona"
+      },
+      "tank_temperature": {
+        "name": "Temperatura accumulo ACS"
+      }
+    }
+  },
+  "services": {
+    "set_vane_horizontal": {
+      "description": "Imposta la posizione orizzontale dell'aletta.",
+      "fields": {
+        "position": {
+          "description": "Posizione orizzontale dell'aletta. Le opzioni disponibili sono nell'attributo vane_horizontal_positions.",
+          "name": "Posizione"
+        }
+      },
+      "name": "Imposta aletta orizzontale"
+    },
+    "set_vane_vertical": {
+      "description": "Imposta la posizione verticale dell'aletta.",
+      "fields": {
+        "position": {
+          "description": "Posizione verticale dell'aletta. Le opzioni disponibili sono nell'attributo vane_vertical_positions.",
+          "name": "Posizione"
+        }
+      },
+      "name": "Imposta aletta verticale"
+    }
+  }
+}

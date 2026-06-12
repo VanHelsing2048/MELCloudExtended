@@ -2,6 +2,13 @@
 
 All notable changes to MELCloud Extended are documented in this file.
 
+## 0.1.5 - 2026-06-12
+
+### Added
+
+- Added Italian UI translations for MELCloud entity names, config flow text, and
+  service descriptions.
+
 ## 0.1.4 - 2026-06-12
 
 ### Documentation
